@@ -1,3 +1,23 @@
+
+
 <section data-ng-controller="IndexController">
   <h1 mean-token="'home-default'">This is the home view</h1>
+
+
+<div ng-controller="MapCtrl">
+    <google-map id="mymap" 
+            center="center" 
+            zoom="zoom" 
+            draggable="true"                                    
+            mark-click="false">
+            <markers>
+                <marker ng-repeat="marker in markers" coords="marker">
+                </marker>
+            </markers>
+    </google-map>
+</div>
+
+
 </section>
+
+
